@@ -62,6 +62,8 @@ public class SqlUtils {
             jdbcDriver = "org.h2.Driver";
         } else if (jdbcUrl.toLowerCase().startsWith("jdbc:mysql:")) {
             jdbcDriver = com.mysql.jdbc.Driver.class.getName();
+        } else if (jdbcUrl.toLowerCase().startsWith("jdbc:sql4es:")) {
+            throw new RuntimeException("Failed to load jdbc driver");
         } else {
             throw new RuntimeException("Unsupported jdbc url: " + jdbcUrl);
         }

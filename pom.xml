@@ -25,10 +25,10 @@
             <name>Scala-Tools Maven2 Repository</name>
             <url>http://scala-tools.org/repo-releases</url>
         </repository>
-      <repository>
-          <id>cloudera</id>
-          <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
-      </repository>
+        <repository>
+            <id>cloudera</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
         <repository>
             <id>hortonworks</id>
             <url>http://repo.hortonworks.com/content/repositories/releases/</url>
@@ -293,6 +293,14 @@
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>nl.anchormen</groupId>
+            <artifactId>sql4es</artifactId>
+            <version>0.8_5.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/sql4es-0.8_5.0.0.jar</systemPath>
         </dependency>
 
         <!--Test-->

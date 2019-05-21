@@ -100,8 +100,8 @@ com.uber.uberscriptquery.examples.QueryExecutionExample
 
 g4 build way
 ============
-java -jar antlr-4.5.3-complete.jar -visitor -listener ./src/main/antlr4/UberScriptQuerySql.g4 -o ./antlr4_generated/ 
-java -jar antlr-4.5.3-complete.jar -visitor -listener ./src/main/antlr4/UberScriptQueryTemplate.g4 -o ./antlr4_generated/
+java -jar ./lib/antlr-4.5.3-complete.jar -visitor -listener ./src/main/antlr4/UberScriptQuerySql.g4 -o ./antlr4_generated/ 
+java -jar ./lib/antlr-4.5.3-complete.jar -visitor -listener ./src/main/antlr4/UberScriptQueryTemplate.g4 -o ./antlr4_generated/
 
 jar build way
 ============

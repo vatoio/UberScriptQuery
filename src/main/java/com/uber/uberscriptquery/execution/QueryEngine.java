@@ -166,6 +166,9 @@ public class QueryEngine implements Serializable {
                 if (statementAssignment.getQueryType() == null) {
                     logger.info("Running query by spark sql: " + statementAssignment.getQueryText());
                     df = spark.sql(statementAssignment.getQueryText());
+                } else if (statementAssignment.getQueryType().equalsIgnoreCase("ES")) {
+                    logger.info("Running query by ES: " + statementAssignment);
+                    throw new RuntimeException("Not support elasticsearch queryBody");
                 } else if (statementAssignment.getQueryType().equalsIgnoreCase("SQL")) {
                     logger.info("Running query by SQL: " + statementAssignment);
 
