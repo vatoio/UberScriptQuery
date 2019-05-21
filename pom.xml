@@ -354,6 +354,11 @@
             </exclusions>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.facebook.presto</groupId>
+            <artifactId>presto-parser</artifactId>
+            <version>0.166</version>
+        </dependency>
     </dependencies>
 
     <build>
