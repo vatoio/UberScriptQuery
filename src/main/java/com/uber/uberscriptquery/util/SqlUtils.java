@@ -63,7 +63,7 @@ public class SqlUtils {
         } else if (jdbcUrl.toLowerCase().startsWith("jdbc:mysql:")) {
             jdbcDriver = com.mysql.jdbc.Driver.class.getName();
         } else if (jdbcUrl.toLowerCase().startsWith("jdbc:sql4es:")) {
-            throw new RuntimeException("Failed to load jdbc driver");
+            jdbcDriver = com.uber.uberscriptquery.jdbc.sql4es.jdbc.ESDriver.class.getName();
         } else {
             throw new RuntimeException("Unsupported jdbc url: " + jdbcUrl);
         }
