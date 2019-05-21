@@ -295,14 +295,6 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>nl.anchormen</groupId>
-            <artifactId>sql4es</artifactId>
-            <version>0.8_5.0.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/sql4es-0.8_5.0.0.jar</systemPath>
-        </dependency>
-
         <!--Test-->
         <dependency>
             <groupId>org.scalatest</groupId>
