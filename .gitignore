@@ -4,3 +4,4 @@ target/
 
 dependency-reduced-pom.xml
 
+antlr4_generated/

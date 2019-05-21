@@ -1,4 +1,4 @@
-// Generated from UberScriptQueryTemplate.g4 by ANTLR 4.5.3
+// Generated from ./src/main/antlr4/UberScriptQueryTemplate.g4 by ANTLR 4.5.3
 
    package com.uber.uberscriptquery.antlr4.generated;
 

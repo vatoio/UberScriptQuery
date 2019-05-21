@@ -49,7 +49,7 @@ statementAssignment_tableAlias
     : IDENTIFIER
     ;
 statementAssignment_queryType
-    : 'SQL' | 'DATAGEN'
+    : 'SQL' | 'ES' | 'DATAGEN'
     ;
 statementAssignment_queryEngine
     : identifier
