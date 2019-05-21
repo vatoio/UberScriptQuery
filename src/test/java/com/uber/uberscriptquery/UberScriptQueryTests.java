@@ -43,10 +43,10 @@ public class UberScriptQueryTests {
 
         SparkConf sparkConf = new SparkConf()
                 .setMaster(master)
-                .setAppName(appName)
+                .setAppName(appName);
 //                .config("spark.executor.uri", "<your_executor_uri>")
 ////                .config("spark.executor.memory", "<your_conf>")
-                .set("spark.jars", "/Users/minh/Desktop/vato/UberScriptQuery/target/UberScriptQuery-1.1.01.jar");
+//                .set("spark.jars", "/Users/minh/Desktop/vato/UberScriptQuery/target/UberScriptQuery-1.1.01.jar");
 
         SparkSession sparkSession = SparkSession
                 .builder()
